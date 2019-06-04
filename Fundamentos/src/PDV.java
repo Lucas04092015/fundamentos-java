@@ -1,7 +1,6 @@
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class PDV {
@@ -13,7 +12,7 @@ public class PDV {
 		//Formatar a data 
 		DateFormat formatador = DateFormat.getDateInstance(DateFormat.FULL); // FULL exibe data e hora 
 		DecimalFormat resultado = new DecimalFormat("#0.00");
-		double total,desconto = 0,totaldesconto,pago,troco;
+		double total,desconto,totaldesconto,pago,troco;
 		Scanner leia = new Scanner(System.in);
 			System.out.println(formatador.format(data));
 			System.out.println("=====================");
